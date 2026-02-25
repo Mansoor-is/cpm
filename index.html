@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Deals Hub</title>
+  <meta name="description" content="Compare trusted online services and partner offers. Informational site with verified recommendations." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for GitHub Pages CPA funnel */
+    .cta-button { transition: transform 0.2s; }
+    .cta-button:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Smart Deals Hub</h1>
+      <div class="space-x-4">
+        <a href="index.html#offers" class="text-gray-700 hover:underline">Offers</a>
+        <a href="index.html#about" class="text-gray-700 hover:underline">About</a>
+        <a href="index.html#contact" class="text-gray-700 hover:underline">Contact</a>
+        <a href="index.html#policies" class="text-gray-700 hover:underline">Privacy</a>
+        <a href="index.html#offers" class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700">View Offers</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <h2 class="text-4xl font-bold mb-4">Discover Trusted Online Services & Offers</h2>
+    <p class="mb-6 text-lg">Explore verified partner offers and services. We may earn commissions when you complete partner actions.</p>
+    <a href="index.html#offers" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-2xl shadow-lg cta-button">View Available Offers</a>
+  </section>
+
+  <!-- Funnel Overview -->
+  <section class="max-w-6xl mx-auto py-12 px-4 text-center">
+    <h3 class="text-3xl font-semibold mb-4">How It Works</h3>
+    <p class="text-gray-600 mb-8">Ad → Landing Page → Pre-Sell Page → Partner Offer</p>
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow">1️⃣ Discover Offer</div>
+      <div class="bg-white p-6 rounded-2xl shadow">2️⃣ Learn Details</div>
+      <div class="bg-white p-6 rounded-2xl shadow">3️⃣ Verify Requirements</div>
+      <div class="bg-white p-6 rounded-2xl shadow">4️⃣ Continue to Partner</div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section id="offers" class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-3xl font-semibold text-center mb-4">Featured Partner Offers</h3>
+    <p class="text-center text-gray-600 mb-10">We review and recommend verified third-party services. Clicking an offer may redirect you to our partner page.</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="text-xl font-bold mb-2">Online Service Free Trial</h4>
+        <p class="mb-4">Learn more about this partner service before continuing.</p>
+        <a href="presell1.html" rel="nofollow" class="block text-center bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 cta-button">Learn More</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="text-xl font-bold mb-2">Recommended Mobile App</h4>
+        <p class="mb-4">See app features and requirements before installation.</p>
+        <a href="presell2.html" rel="nofollow" class="block text-center bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 cta-button">View Details</a>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow">
+        <h4 class="text-xl font-bold mb-2">User Survey Program</h4>
+        <p class="mb-4">Understand participation details prior to accessing partner surveys.</p>
+        <a href="presell3.html" rel="nofollow" class="block text-center bg-blue-600 text-white py-2 rounded-xl hover:bg-blue-700 cta-button">Read More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <section class="bg-indigo-600 text-white py-12">
+    <div class="max-w-xl mx-auto text-center px-4">
+      <h3 class="text-2xl font-bold mb-4">Join Our VIP Deals List</h3>
+      <p class="mb-6">Get notified about new high-paying CPA offers.</p>
+      <form class="flex flex-col md:flex-row gap-4" onsubmit="event.preventDefault(); alert('Subscribed!')">
+        <input type="text" placeholder="Your Name" class="flex-1 px-4 py-3 rounded-xl text-black" required />
+        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-xl text-black" required />
+        <label class="text-sm flex items-center gap-2"><input type="checkbox" required /> I agree to receive updates.</label>
+        <button class="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-semibold mb-4">About Us</h3>
+    <p>Smart Deals Hub is an informational website that connects users with third-party promotional offers and online services. Some links on this site may be affiliate or CPA links, meaning we may earn a commission when users complete actions.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+    <p>Email: support@smartdealshub.com</p>
+    <p>Address: Your Business Address Here</p>
+  </section>
+
+  <!-- Policies Section -->
+  <section id="policies" class="max-w-6xl mx-auto py-12 px-4">
+    <h3 class="text-2xl font-semibold mb-4">Policies</h3>
+    <p><strong>Privacy Policy:</strong> We respect your privacy and do not sell personal data. Information collected is used to improve services and communication.</p>
+    <p><strong>Terms & Conditions:</strong> By using this website, you agree to our terms. Offers are provided by third-party partners and may vary by region.</p>
+    <p><strong>Disclaimer:</strong> This website is not affiliated with Google or any listed brands unless explicitly stated.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>© 2026 Smart Deals Hub | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
